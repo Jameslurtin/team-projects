@@ -10,7 +10,7 @@ const App = () => {
     <h1 className="text-3xl font-bold text-center mb-8 text-blue-500 flex justify-center">Team and Projects</h1>
       
     </div>
-    <div className='flex justify-center space-x-6'>
+    <div className='flex justify-center space-x-6 px-5'>
     {teamsData.map((team, index) => (
         <Team key={index} data={team} />
       ))}

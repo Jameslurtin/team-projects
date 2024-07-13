@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team = ({ data }) => {
     return (
-        <div className={` flex-wrap  w-96   border-gray-950 rounded-xl mb-6 ${data.color}`}>
+        <div className={` flex-wrap  w-96   border-gray-950 rounded-xl mb-6 px-4 ${data.color}`}>
             <h2 className="text-2xl font-bold mb-4 ">{data.head}</h2>
             {data.projects.map((project, index) => (
                 <div 
