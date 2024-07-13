@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Team from './Team';
+import teamsData from './teamsData';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-slate-700 '>
+      
+    <div className="container mx-auto bg- ">
+    <h1 className="text-3xl font-bold text-center mb-8 text-blue-500 flex justify-center">Team and Projects</h1>
+      
+    </div>
+    <div className='flex justify-center space-x-6'>
+    {teamsData.map((team, index) => (
+        <Team key={index} data={team} />
+      ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
